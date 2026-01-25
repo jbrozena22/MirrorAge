@@ -17,41 +17,50 @@
         .container {
             background-color: #ffffff;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #1a1a1a;
-            margin-bottom: 10px;
-        }
-        h2 {
             color: #2c3e50;
-            margin-top: 30px;
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
         }
-        p {
-            margin-bottom: 15px;
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #444;
+            margin-top: 20px;
+            font-size: 1.1em;
         }
         ul {
-            margin-bottom: 15px;
             padding-left: 20px;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
-        .highlight-box {
-            background-color: #e8f4fd;
-            border-left: 4px solid #3498db;
+        .summary-box {
+            background-color: #e8f4fc;
+            border-left: 5px solid #3498db;
             padding: 15px;
-            margin: 20px 0;
+            margin-bottom: 30px;
             border-radius: 4px;
         }
         .footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #666;
+            margin-top: 50px;
             text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -59,64 +68,28 @@
 
 <div class="container">
     <h1>Privacy Policy</h1>
-    <p><strong>App Name:</strong> MemoryAge</p>
-    <p><strong>Last Updated:</strong> 01/13/2026</p>
+    <p><strong>App Name:</strong> MemoryAge<br>
+    <strong>Last Updated:</strong> January 25, 2026</p>
 
-    <div class="highlight-box">
-        <strong>Summary:</strong> MemoryAge is designed with privacy as a priority. Your data never leaves your device. We do not use cloud servers, analytics, or third-party tracking.
+    <div class="summary-box">
+        <strong>Summary</strong><br>
+        MemoryAge is designed with privacy as a priority. Your personal family data (such as photos and names) never leaves your device. We use limited, anonymous analytics solely to improve app stability and performance. We do not use your data for advertising.
     </div>
 
     <h2>1. Overview</h2>
-    <p>MemoryAge ("we," "our," or "us") is committed to protecting your privacy. This policy explains how our iOS application handles your data. Our business model is simple: we provide a utility tool for parents, not a data collection service.</p>
+    <p>MemoryAge ("we," "our," or "us") is committed to protecting your privacy. This policy explains how our iOS application handles your data. Our goal is to provide a helpful utility for parents while maintaining strict control over your personal content.</p>
 
     <h2>2. Data Collection & Storage</h2>
-    <p>We believe that your family's data belongs to you. As such, <strong>all data is stored locally on your device.</strong></p>
-    
-    <p><strong>Information we process locally:</strong></p>
+    <p>We believe that your family's personal data belongs to you.</p>
+
+    <h3>A. Information Stored Locally (Strictly Private)</h3>
+    <p>The following sensitive information is processed and stored <strong>only on your device</strong>:</p>
     <ul>
-        <li><strong>Children's Names & Birth Dates:</strong> You enter this information manually to allow the app to calculate age comparisons. This data is stored in your device's local storage (UserDefaults) and is never transmitted to us.</li>
-        <li><strong>Photo & Video Metadata:</strong> The app scans the creation dates of your photos and videos to find matches. This processing happens entirely on your device's processor.</li>
+        <li><strong>Children's Names & Birth Dates:</strong> You enter this manually to calculate age comparisons. It is stored in local preferences and never transmitted to us.</li>
+        <li><strong>Photo & Video Metadata:</strong> The app scans creation dates to find matches. This processing happens entirely on your device's processor.</li>
     </ul>
 
-    <h2>3. Permissions</h2>
-    <p>To function, MemoryAge requires specific permissions on your iOS device:</p>
+    <h3>B. Information Collected for App Improvement</h3>
+    <p>We collect limited, non-personal data to help us fix crashes and understand app usage:</p>
     <ul>
-        <li><strong>Photo Library Access:</strong> We request access to your photo library to find videos of your older child that match the age of your younger child. 
-            <br><em>Note: While the app requests Read/Write access (to potentially allow saving future creations), we primarily use Read access to analyze timestamps. We do not upload your photos or videos to any server.</em>
-        </li>
-    </ul>
-    <p>You can revoke these permissions at any time in your iOS Settings app.</p>
-
-    <h2>4. Third-Party Services</h2>
-    <p>We do not use any third-party services that collect data.</p>
-    <ul>
-        <li><strong>No Analytics:</strong> We do not track how you use the app.</li>
-        <li><strong>No Advertising:</strong> We do not display ads or share data with ad networks.</li>
-        <li><strong>No Cloud Storage:</strong> We do not have a backend server. Your data stays on your phone.</li>
-    </ul>
-
-    <h2>5. Children’s Privacy</h2>
-    <p>Our application is a tool for parents. While the app processes information about children (names and birth dates provided by the parent), this data remains strictly on the parent's device.</p>
-    <p>We do not knowingly collect, store, or transmit personal information from children under 13. Since we operate no servers, we have no mechanism to receive such data.</p>
-
-    <h2>6. Data Retention & Deletion</h2>
-    <p>Because your data is stored locally:</p>
-    <ul>
-        <li><strong>Retention:</strong> Data is retained only as long as you keep the app installed and the data entered.</li>
-        <li><strong>Deletion:</strong> You can delete all data associated with MemoryAge simply by uninstalling the application from your device.</li>
-    </ul>
-
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Since we do not collect email addresses, we advise you to review this page periodically for any changes. Continued use of the app implies acceptance of the policy.</p>
-
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:mirrorage.partridge812@aleeas.com">mirrorage.partridge812@aleeas.com</a></p>
-
-    <div class="footer">
-        &copy; 2026 John Brozena. All rights reserved.
-    </div>
-</div>
-
-</body>
-</html>
+        <li><strong>Usage Data:</strong> Anonymized data about how you
